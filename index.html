@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <title>Shopping cart</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Shopping cart</h1>
+
+
+        <section class="shopping-cart">
+            <ol id="shopping-cart--list">
+                <div class="_flex shopping-cart--list-item header">
+                    <h4 class="title">Product Name</h4>
+                    <h4>Price</h4>
+                    <h4 class="endtitle">subtotal</h4>
+                </div>
+                <li class="_grid shopping-cart--list-item">
+                    <div class="_flex product-info">
+                        <h4 class="product-name">item 1</h4>
+                        <button class="material-icons color"style="font-size:40px;">favorite</button>
+                        <div class="price product-single-price">100</div>
+                    </div>
+                    <div class=" product-modifiers">
+                        <div class="_flex">
+                            <button class="_btn  product-subtract">&minus;</button>
+                            <div class=" product-qty">1</div>
+                            <button class="_btn  product-plus">&plus;</button>
+                        </div>
+                        <button class="_btn  product-remove">Remove</button>
+                        <div class="subtotal product-total-price">100.00</div>
+                    </div>
+                </li>
+                <li class="_grid shopping-cart--list-item">
+                    <div class="_flex product-info">
+                        <h4 class="product-name">item 2</h4>
+                        <button class="material-icons"style="font-size:40px;">favorite</button>
+                        <div class="price product-single-price">200</div>
+                    </div>
+                    <div class=" product-modifiers">
+                        <div class="_flex">
+                            <button class="_btn  product-subtract">&minus;</button>
+                            <div class=" product-qty" id="qty2">1</div>
+                            <button class="_btn  product-plus">&plus;</button>
+                        </div>
+                        <button class="_btn  product-remove">Remove</button>
+                        <div class="subtotal product-total-price">200.00</div>
+                    </div>
+                </li>
+                <li class="_grid shopping-cart--list-item">
+                    <div class="_flex product-info">
+                        <h4 class="product-name">item 3</h4>
+                        <button class="material-icons"style="font-size:40px;">favorite</button>
+                        <div class="price product-single-price">300</div>
+                    </div>
+                    <div class=" product-modifiers">
+                        <div class="_flex">
+                            <button class="_btn  product-subtract">&minus;</button>
+                            <div class=" product-qty" id="qty3">1</div>
+                            <button class="_btn  product-plus">&plus;</button>
+                        </div>
+                        <button class="_btn  product-remove">Remove</button>
+                        <div class="subtotal product-total-price">300.00</div>
+                    </div>
+                </li>
+                <li class="_grid shopping-cart--list-item">
+                    <div class="_flex product-info">
+                        <h4 class="product-name">item 4</h4>
+                        <button class="material-icons"style="font-size:40px;">favorite</button>
+                        <div class="price product-single-price">400</div>
+                    </div>
+                    <div class=" product-modifiers">
+                        <div class="_flex">
+                            <button class="_btn  product-subtract">&minus;</button>
+                            <div class=" product-qty" id="qty4">1</div>
+                            <button class="_btn  product-plus">&plus;</button>
+                        </div>
+                        <button class="_btn product-remove">Remove</button>
+                        <div class="subtotal product-total-price">400.00</div>
+                    </div>
+                </li>
+            </ol>
+
+            <footer class="_grid cart-totals">
+                <div class=" total" id="totalCtr">
+                    <div class="cart-totals-key">Total</div>
+                    <div class="cart-totals-value" id="total">$0.00</div>
+                </div>
+                <div class=" checkout">
+                    <button class="_btn checkout-btn ">Checkout</button>
+                </div>
+            </footer>
+
+        </section>
+    </div>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>
